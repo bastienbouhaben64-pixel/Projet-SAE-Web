@@ -12,28 +12,28 @@
 
 <h2 id="espaces" class="text-center section-title mb-4">Accédez à votre espace dédié</h2>
 <div class="row g-3 mb-4">
-    <div class="col-md-3 col-sm-6">
+    <div class="col-12 col-sm-6 col-md-3">
         <div class="role-card">
             <h5>Étudiant</h5>
             <p>Consultez les offres, déposez vos rapports et suivez votre validation.</p>
             <a class="cta" href="{{ route('connexion', ['role' => 'etudiant']) }}">Entrer →</a>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6">
+    <div class="col-12 col-sm-6 col-md-3">
         <div class="role-card">
             <h5>Administrateur</h5>
             <p>Gestion des profils, archivage des dossiers et planification GANTT.</p>
             <a class="cta" href="{{ route('connexion', ['role' => 'admin']) }}">Gérer →</a>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6">
+    <div class="col-12 col-sm-6 col-md-3">
         <div class="role-card">
             <h5>Entreprise</h5>
             <p>Déposez vos offres, signez les conventions et évaluez les stagiaires.</p>
             <a class="cta" href="{{ route('connexion', ['role' => 'entreprise']) }}">Publier →</a>
         </div>
     </div>
-    <div class="col-md-3 col-sm-6">
+    <div class="col-12 col-sm-6 col-md-3">
         <div class="role-card">
             <h5>Tuteurs &amp; Jurys</h5>
             <p>Suivez l'avancement, validez les stages et consultez les cahiers de stage.</p>
