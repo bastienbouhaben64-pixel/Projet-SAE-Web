@@ -24,12 +24,13 @@
             <input type="password" name="password" class="form-control" placeholder="Mot de passe" required>
         </div>
         <div class="mb-3">
-            <select name="role" class="form-select" required>
-                <option value="" disabled @selected(!$current)>Vous êtes…</option>
+            <div class="small text-muted mb-2">Vous êtes…</div>
+            <div class="role-choice-grid">
                 @foreach ($roleLabels as $key => $label)
-                    <option value="{{ $key }}" @selected($current === $key)>{{ $label }}</option>
+                    <input class="btn-check" type="radio" name="role" id="role-{{ $key }}" value="{{ $key }}" required @checked($current === $key)>
+                    <label class="btn btn-outline-primary role-choice" for="role-{{ $key }}">{{ $label }}</label>
                 @endforeach
-            </select>
+            </div>
         </div>
         <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" name="remember" id="remember">

@@ -276,6 +276,25 @@ a {
     padding: .65rem 1rem;
 }
 
+.role-choice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .5rem;
+}
+
+.role-choice {
+    font-size: .82rem;
+    padding: .55rem .45rem;
+    white-space: normal;
+    line-height: 1.2;
+}
+
+.role-choice-grid .btn-check:checked + .role-choice {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+}
+
 .auth-links a {
     color: var(--brand);
     text-decoration: none;
@@ -667,5 +686,14 @@ a {
     .role-card h5,
     .role-card p {
         overflow-wrap: anywhere;
+    }
+
+    .auth-card {
+        max-width: calc(100vw - 1.5rem);
+        padding: 1.75rem 1.25rem;
+    }
+
+    .role-choice-grid {
+        grid-template-columns: 1fr;
     }
 }
